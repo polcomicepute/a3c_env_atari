@@ -13,7 +13,7 @@ from model import ActorCritic
 def test(rank, args, shared_model, counter):
     torch.manual_seed(args.seed + rank)
 
-    env = make_atari(args.env_name)
+    env = make_atari(args.env_name, render_mode='human')
     env = wrap_deepmind(env)
     env.seed(args.seed + rank)
     
@@ -67,7 +67,7 @@ def test(rank, args, shared_model, counter):
         
 
         state, reward, done, _ = env.step(action[0, 0])
-        env.render()
+        # env.render()
         done = done or episode_length >= args.max_episode_length
         # print(episode_length)
         reward_sum += reward

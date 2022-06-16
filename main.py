@@ -32,7 +32,7 @@ parser.add_argument('--max-grad-norm', type=float, default=50,
                     help='value loss coefficient (default: 50)')
 parser.add_argument('--seed', type=int, default=1,
                     help='random seed (default: 1)')
-parser.add_argument('--num-processes', type=int, default=4,
+parser.add_argument('--num-processes', type=int, default=12,
                     help='how many training processes to use (default: 4)')
 parser.add_argument('--num-steps', type=int, default=20,
                     help='number of forward steps in A3C (default: 20)')
@@ -40,7 +40,7 @@ parser.add_argument('--max-episode-length', type=int, default=1000000,
                     help='maximum length of an episode (default: 1000000)')
 parser.add_argument('--env-name', default='PongNoFrameskip-v4',
                     help='environment to train on (default: PongDeterministic-v4)')
-parser.add_argument('--no-shared', default=False,
+parser.add_argument('--no-shared', default=True,
                     help='use an optimizer without shared momentum.')
 
 
@@ -49,10 +49,13 @@ if __name__ == '__main__':
     # os.environ['CUDA_VISIBLE_DEVICES'] = ""
 
     args = parser.parse_args()
+    print('main')
 
     torch.manual_seed(args.seed)
-    env = make_atari(args.env_name)
+    env = make_atari(args.env_name,render_mode= None)
     env = wrap_deepmind(env)
+    print('main')
+    
 
     
     img_h, img_w, img_c = env.observation_space.shape
@@ -60,15 +63,15 @@ if __name__ == '__main__':
     print('main', state_size)
     
     
-    shared_model = ActorCritic(
-        state_size[0], env.action_space)
+    shared_model = ActorCritic(state_size[0], env.action_space)
     shared_model.share_memory()
 
     if args.no_shared:
         optimizer = None
     else:
-        optimizer = my_optim.SharedAdam(shared_model.parameters(), lr=args.lr)
-        optimizer.share_memory()
+        pass
+        # optimizer = my_optim.SharedAdam(shared_model.parameters(), lr=args.lr)
+        # optimizer.share_memory()
 
     processes = []
 
@@ -83,5 +86,6 @@ if __name__ == '__main__':
         p = mp.Process(target=train, args=(rank, args, shared_model, counter, lock, optimizer))
         p.start()
         processes.append(p)
+        
     for p in processes:
         p.join()

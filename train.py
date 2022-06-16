@@ -22,13 +22,13 @@ def train(rank, args, shared_model, counter, lock, optimizer=None):
     
     
 
-    env = make_atari(args.env_name)
+    env = make_atari(args.env_name, render_mode=None)
     env = wrap_deepmind(env)
     env.seed(args.seed + rank)
     
     img_h, img_w, img_c = env.observation_space.shape
     state_size = [1*img_c, img_h, img_w]
-    print('train', state_size)
+    # print('train', state_size)
 
     model = ActorCritic(state_size[0], env.action_space)
 
@@ -44,7 +44,10 @@ def train(rank, args, shared_model, counter, lock, optimizer=None):
     episode_length = 0
     while True:
         # Sync with the shared model
+        # print('train')
+        
         model.load_state_dict(shared_model.state_dict())
+        
         if done:
             cx = torch.zeros(1, 256)
             hx = torch.zeros(1, 256)
@@ -56,8 +59,11 @@ def train(rank, args, shared_model, counter, lock, optimizer=None):
         log_probs = []
         rewards = []
         entropies = []
+        # print('train')
 
         for step in range(args.num_steps):
+            # print('train')
+            
             episode_length += 1
             value, logit, (hx, cx) = model((state.unsqueeze(0),
                                             (hx, cx)))
@@ -74,7 +80,7 @@ def train(rank, args, shared_model, counter, lock, optimizer=None):
             # print('action',action[0].numpy())
             
             state, reward, done, _ = env.step(int(action[0]))
-            # env.render()s
+            # env.render()
             done = done or episode_length >= args.max_episode_length
             reward = max(min(reward, 1), -1)
 
@@ -119,7 +125,7 @@ def train(rank, args, shared_model, counter, lock, optimizer=None):
         optimizer.zero_grad()
 
         (policy_loss + args.value_loss_coef * value_loss).backward()
-        torch.nn.utils.clip_grad_norm_(model.parameters(), args.max_grad_norm)
+        # torch.nn.utils.clip_grad_norm_(model.parameters(), args.max_grad_norm)
 
         ensure_shared_grads(model, shared_model)
         optimizer.step()
