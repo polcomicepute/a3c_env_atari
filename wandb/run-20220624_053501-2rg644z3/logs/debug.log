@@ -1,0 +1,62 @@
+2022-06-24 05:35:01,078 INFO    MainThread:49076 [wandb_setup.py:_flush():76] Loading settings from /Users/polcom/.config/wandb/settings
+2022-06-24 05:35:01,078 INFO    MainThread:49076 [wandb_setup.py:_flush():76] Loading settings from /Users/polcom/Code/RL/a3c_pong/wandb/settings
+2022-06-24 05:35:01,078 INFO    MainThread:49076 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'api_key': '***REDACTED***'}
+2022-06-24 05:35:01,078 INFO    MainThread:49076 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2022-06-24 05:35:01,078 INFO    MainThread:49076 [wandb_init.py:_log_setup():428] Logging user logs to /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_053501-2rg644z3/logs/debug.log
+2022-06-24 05:35:01,078 INFO    MainThread:49076 [wandb_init.py:_log_setup():429] Logging internal logs to /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_053501-2rg644z3/logs/debug-internal.log
+2022-06-24 05:35:01,078 INFO    MainThread:49076 [wandb_init.py:init():462] calling init triggers
+2022-06-24 05:35:01,078 INFO    MainThread:49076 [wandb_init.py:init():465] wandb.init called with sweep_config: {}
+config: {}
+2022-06-24 05:35:01,078 INFO    MainThread:49076 [wandb_init.py:init():515] starting backend
+2022-06-24 05:35:01,081 INFO    MainThread:49076 [backend.py:ensure_launched():217] starting backend process...
+2022-06-24 05:35:01,089 INFO    BackendThr:49076 [internal.py:wandb_internal():90] W&B internal server running at pid: 49076, started at: 2022-06-24 05:35:01.089038
+2022-06-24 05:35:01,092 INFO    MainThread:49076 [backend.py:ensure_launched():222] started backend process with pid: 0
+2022-06-24 05:35:01,095 INFO    MainThread:49076 [wandb_init.py:init():525] backend started and connected
+2022-06-24 05:35:01,099 INFO    MainThread:49076 [wandb_init.py:init():596] updated telemetry
+2022-06-24 05:35:01,101 INFO    WriterThread:49076 [datastore.py:open_for_write():75] open: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_053501-2rg644z3/run-2rg644z3.wandb
+2022-06-24 05:35:01,141 INFO    MainThread:49076 [wandb_init.py:init():627] communicating run to backend with 30 second timeout
+2022-06-24 05:35:01,523 INFO    SenderThread:49076 [dir_watcher.py:__init__():205] watching files in: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_053501-2rg644z3/files
+2022-06-24 05:35:01,523 INFO    SenderThread:49076 [sender.py:_start_run_threads():812] run started: 2rg644z3 with start time 1656016501
+2022-06-24 05:35:01,526 INFO    SenderThread:49076 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 05:35:01,526 INFO    MainThread:49076 [wandb_run.py:_on_init():1924] communicating current version
+2022-06-24 05:35:01,600 INFO    MainThread:49076 [wandb_run.py:_on_init():1928] got version response 
+2022-06-24 05:35:01,601 INFO    MainThread:49076 [wandb_init.py:init():662] starting run threads in backend
+2022-06-24 05:35:02,527 INFO    Thread-10 :49076 [dir_watcher.py:_on_file_created():256] file/dir created: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_053501-2rg644z3/files/wandb-summary.json
+2022-06-24 05:35:02,528 INFO    Thread-10 :49076 [dir_watcher.py:_on_file_created():256] file/dir created: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_053501-2rg644z3/files/requirements.txt
+2022-06-24 05:35:02,528 INFO    Thread-10 :49076 [dir_watcher.py:_on_file_created():256] file/dir created: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_053501-2rg644z3/files/conda-environment.yaml
+2022-06-24 05:35:05,539 INFO    Thread-10 :49076 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_053501-2rg644z3/files/conda-environment.yaml
+2022-06-24 05:35:05,861 INFO    SenderThread:49076 [sender.py:_save_file():949] saving file wandb-metadata.json with policy now
+2022-06-24 05:35:05,869 INFO    MainThread:49076 [wandb_run.py:_console_start():1898] atexit reg
+2022-06-24 05:35:05,870 INFO    MainThread:49076 [wandb_run.py:_redirect():1771] redirect: SettingsConsole.OFF
+2022-06-24 05:35:05,873 INFO    MainThread:49076 [wandb_init.py:init():688] run started, returning control to user process
+2022-06-24 05:35:05,876 INFO    MainThread:49076 [wandb_run.py:_config_callback():1136] config_cb None None {'lr': 0.0001, 'gamma': 0.99, 'gae_lambda': 1.0, 'entropy_coef': 0.01, 'value_loss_coef': 0.5, 'max_grad_norm': 50, 'seed': 1, 'num_processes': 12, 'num_steps': 20, 'max_episode_length': 1000000, 'env_name': 'PongNoFrameskip-v4', 'no_shared': True}
+2022-06-24 05:35:06,398 INFO    MainThread:49076 [wandb_watch.py:watch():47] Watching
+2022-06-24 05:35:06,998 INFO    Thread-10 :49076 [dir_watcher.py:_on_file_created():256] file/dir created: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_053501-2rg644z3/files/wandb-metadata.json
+2022-06-24 05:35:07,034 INFO    Thread-10 :49076 [dir_watcher.py:_on_file_created():256] file/dir created: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_053501-2rg644z3/files/output.log
+2022-06-24 05:35:07,607 INFO    Thread-14 :49076 [upload_job.py:push():132] Uploaded file /var/folders/b1/b42ky7d53ps4ks0sbswtpms40000gn/T/tmpn2ygp89mwandb/2s62pg4l-wandb-metadata.json
+2022-06-24 05:35:32,976 INFO    Thread-10 :49076 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_053501-2rg644z3/files/config.yaml
+2022-06-24 05:35:36,263 INFO    SenderThread:49076 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 05:35:37,046 INFO    Thread-10 :49076 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_053501-2rg644z3/files/wandb-summary.json
+2022-06-24 05:36:05,479 INFO    SenderThread:49076 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 05:36:06,193 INFO    Thread-10 :49076 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_053501-2rg644z3/files/wandb-summary.json
+2022-06-24 05:36:33,260 INFO    SenderThread:49076 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 05:36:33,703 INFO    Thread-10 :49076 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_053501-2rg644z3/files/wandb-summary.json
+2022-06-24 05:37:01,044 INFO    SenderThread:49076 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 05:37:01,156 INFO    Thread-10 :49076 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_053501-2rg644z3/files/wandb-summary.json
+2022-06-24 05:37:28,741 INFO    SenderThread:49076 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 05:37:28,742 INFO    Thread-10 :49076 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_053501-2rg644z3/files/wandb-summary.json
+2022-06-24 05:37:29,762 INFO    Thread-10 :49076 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_053501-2rg644z3/files/wandb-summary.json
+2022-06-24 05:37:56,549 INFO    SenderThread:49076 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 05:37:57,265 INFO    Thread-10 :49076 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_053501-2rg644z3/files/wandb-summary.json
+2022-06-24 05:38:24,338 INFO    SenderThread:49076 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 05:38:24,797 INFO    Thread-10 :49076 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_053501-2rg644z3/files/wandb-summary.json
+2022-06-24 05:38:51,982 INFO    SenderThread:49076 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 05:38:52,276 INFO    Thread-10 :49076 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_053501-2rg644z3/files/wandb-summary.json
+2022-06-24 05:39:19,660 INFO    SenderThread:49076 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 05:39:19,776 INFO    Thread-10 :49076 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_053501-2rg644z3/files/wandb-summary.json
+2022-06-24 05:39:48,727 INFO    SenderThread:49076 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 05:39:49,079 INFO    Thread-10 :49076 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_053501-2rg644z3/files/wandb-summary.json
+2022-06-24 05:40:01,444 WARNING MsgRouterThr:49076 [router.py:message_loop():73] EOFError seen in message_loop
+2022-06-24 05:40:01,453 INFO    MainThread:49076 [wandb_run.py:_atexit_cleanup():1867] got exitcode: 1
+2022-06-24 05:40:01,454 INFO    MainThread:49076 [wandb_run.py:_restore():1839] restore
+2022-06-24 05:40:01,777 INFO    WriterThread:49076 [datastore.py:close():279] close: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_053501-2rg644z3/run-2rg644z3.wandb

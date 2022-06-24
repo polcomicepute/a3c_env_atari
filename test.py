@@ -1,6 +1,6 @@
 import time
 from collections import deque
-
+import os
 import torch
 import torch.nn.functional as F
 
@@ -8,9 +8,14 @@ import torch.nn.functional as F
 from envs_hm import make_atari,wrap_deepmind
 
 from model import ActorCritic
-
+import wandb
+wandb.login()
+os.environ["WANDB_API_KEY"] = "41d70fa07c07644beca7655a81d7af49afccf2dd"
 
 def test(rank, args, shared_model, counter):
+    wandb.init(project='Pong_NoGAE_4frame+LSTM', entity = "polcom",name='test1_Pong_NoGAE_4frame+LSTM', config=None, sync_tensorboard=True, settings=wandb.Settings(start_method='thread', console="off"))
+    wandb.config.update(args)
+    
     torch.manual_seed(args.seed + rank)
 
     env = make_atari(args.env_name, render_mode='human')
@@ -22,6 +27,8 @@ def test(rank, args, shared_model, counter):
     print('train', state_size)
 
     model = ActorCritic(state_size[0], env.action_space)
+    wandb.watch(model)
+    
 
     # model = ActorCritic(env.observation_space.shape[0], env.action_space)
 
@@ -83,6 +90,15 @@ def test(rank, args, shared_model, counter):
                               time.gmtime(time.time() - start_time)),
                 counter.value, counter.value / (time.time() - start_time),
                 reward_sum, episode_length))
+            wandb.log({
+                "Episode Reward": reward_sum ,
+                "num steps": counter.value,
+                "episode length": episode_length})
+            # data = [[x, y] for (x, y) in zip(recall_micro, precision_micro)]
+            # table = wandb.Table(data=data, columns = ["recall_micro", "precision_micro"])
+            # wandb.log({"my_lineplot_id" : wandb.plot.line(table, "recall_micro", "precision_micro", stroke=None, title="Episode Reward")})
+            
+            
             reward_sum = 0
             episode_length = 0
             actions.clear()

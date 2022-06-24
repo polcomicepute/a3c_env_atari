@@ -14,6 +14,8 @@ from model import ActorCritic
 from test import test
 from train import train
 
+
+
 # Based on
 # https://github.com/pytorch/examples/tree/master/mnist_hogwild
 # Training settings
@@ -39,12 +41,13 @@ parser.add_argument('--num-steps', type=int, default=20,
 parser.add_argument('--max-episode-length', type=int, default=1000000,
                     help='maximum length of an episode (default: 1000000)')
 parser.add_argument('--env-name', default='PongNoFrameskip-v4',
-                    help='environment to train on (default: PongDeterministic-v4)')
+                    help='environment to train on (default: PongDeterministic-v4)') #SpaceInvadersNoFrameskip-v4
 parser.add_argument('--no-shared', default=True,
                     help='use an optimizer without shared momentum.')
 
 
 if __name__ == '__main__':
+    # wandb.init(project='Pong_NoGAE_4frame+LSTM', entity = "polcom",name='test1_Pong_NoGAE_4frame+LSTM', config=None, sync_tensorboard=True, settings=wandb.Settings(start_method='thread', console="off"))
     # os.environ['OMP_NUM_THREADS'] = '1'
     # os.environ['CUDA_VISIBLE_DEVICES'] = ""
 

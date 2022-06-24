@@ -1,0 +1,21 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.8.0",
+    "heartbeatAt": "2022-06-23T20:35:01.604339",
+    "startedAt": "2022-06-23T20:35:01.076583",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/polcomicepute/a3c_env_atari.git",
+        "commit": "7905b37dd8ad88438817e573615e225963f9a540"
+    },
+    "email": null,
+    "root": "/Users/polcom/Code/RL/a3c_pong",
+    "host": "ihyemin-ui-MacBookPro.local",
+    "username": "polcom",
+    "executable": "/Users/polcom/opt/anaconda3/envs/pytorch/bin/python"
+}

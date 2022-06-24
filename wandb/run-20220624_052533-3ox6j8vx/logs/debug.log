@@ -1,0 +1,97 @@
+2022-06-24 05:25:33,348 INFO    MainThread:48404 [wandb_setup.py:_flush():76] Loading settings from /Users/polcom/.config/wandb/settings
+2022-06-24 05:25:33,348 INFO    MainThread:48404 [wandb_setup.py:_flush():76] Loading settings from /Users/polcom/Code/RL/a3c_pong/wandb/settings
+2022-06-24 05:25:33,348 INFO    MainThread:48404 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2022-06-24 05:25:33,348 INFO    MainThread:48404 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'main.py', 'program': 'main.py'}
+2022-06-24 05:25:33,348 INFO    MainThread:48404 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2022-06-24 05:25:33,348 INFO    MainThread:48404 [wandb_init.py:_log_setup():428] Logging user logs to /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_052533-3ox6j8vx/logs/debug.log
+2022-06-24 05:25:33,348 INFO    MainThread:48404 [wandb_init.py:_log_setup():429] Logging internal logs to /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_052533-3ox6j8vx/logs/debug-internal.log
+2022-06-24 05:25:33,348 INFO    MainThread:48404 [wandb_init.py:init():462] calling init triggers
+2022-06-24 05:25:33,348 INFO    MainThread:48404 [wandb_init.py:init():465] wandb.init called with sweep_config: {}
+config: {}
+2022-06-24 05:25:33,348 INFO    MainThread:48404 [wandb_init.py:init():515] starting backend
+2022-06-24 05:25:33,361 INFO    MainThread:48404 [backend.py:ensure_launched():217] starting backend process...
+2022-06-24 05:25:33,362 INFO    MainThread:48404 [backend.py:ensure_launched():222] started backend process with pid: 0
+2022-06-24 05:25:33,363 INFO    BackendThr:48404 [internal.py:wandb_internal():90] W&B internal server running at pid: 48404, started at: 2022-06-24 05:25:33.361782
+2022-06-24 05:25:33,363 INFO    MainThread:48404 [wandb_init.py:init():525] backend started and connected
+2022-06-24 05:25:33,370 INFO    MainThread:48404 [wandb_init.py:init():596] updated telemetry
+2022-06-24 05:25:33,371 INFO    WriterThread:48404 [datastore.py:open_for_write():75] open: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_052533-3ox6j8vx/run-3ox6j8vx.wandb
+2022-06-24 05:25:33,397 INFO    MainThread:48404 [wandb_init.py:init():627] communicating run to backend with 30 second timeout
+2022-06-24 05:25:33,626 ERROR   SenderThread:48404 [internal_api.py:execute():143] 401 response executing GraphQL.
+2022-06-24 05:25:33,626 ERROR   SenderThread:48404 [internal_api.py:execute():144] {"errors":[{"message":"user is not logged in","path":["upsertBucket"],"extensions":{"code":"PERMISSION_ERROR"}}],"data":{"upsertBucket":null}}
+2022-06-24 05:25:34,400 INFO    HandlerThread:48404 [handler.py:finish():806] shutting down handler
+2022-06-24 05:25:34,401 INFO    WriterThread:48404 [datastore.py:close():279] close: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_052533-3ox6j8vx/run-3ox6j8vx.wandb
+2022-06-24 05:25:34,401 ERROR   BackendThr:48404 [internal.py:wandb_internal():165] Thread SenderThread:
+Traceback (most recent call last):
+  File "/Users/polcom/opt/anaconda3/envs/pytorch/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 102, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/polcom/opt/anaconda3/envs/pytorch/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 140, in execute
+    return self.client.execute(*args, **kwargs)
+  File "/Users/polcom/opt/anaconda3/envs/pytorch/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/polcom/opt/anaconda3/envs/pytorch/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/polcom/opt/anaconda3/envs/pytorch/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/transport/requests.py", line 39, in execute
+    request.raise_for_status()
+  File "/Users/polcom/opt/anaconda3/envs/pytorch/lib/python3.8/site-packages/requests/models.py", line 960, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/polcom/opt/anaconda3/envs/pytorch/lib/python3.8/site-packages/wandb/apis/normalize.py", line 22, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/polcom/opt/anaconda3/envs/pytorch/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 1319, in upsert_run
+    response = self.gql(mutation, variable_values=variable_values, **kwargs)
+  File "/Users/polcom/opt/anaconda3/envs/pytorch/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 118, in __call__
+    if not check_retry_fn(e):
+  File "/Users/polcom/opt/anaconda3/envs/pytorch/lib/python3.8/site-packages/wandb/util.py", line 883, in no_retry_auth
+    raise CommError("Invalid or missing api_key. Run `wandb login`")
+wandb.errors.CommError: Invalid or missing api_key. Run `wandb login`
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/polcom/opt/anaconda3/envs/pytorch/lib/python3.8/site-packages/wandb/sdk/internal/internal_util.py", line 51, in run
+    self._run()
+  File "/Users/polcom/opt/anaconda3/envs/pytorch/lib/python3.8/site-packages/wandb/sdk/internal/internal_util.py", line 102, in _run
+    self._process(record)
+  File "/Users/polcom/opt/anaconda3/envs/pytorch/lib/python3.8/site-packages/wandb/sdk/internal/internal.py", line 310, in _process
+    self._sm.send(record)
+  File "/Users/polcom/opt/anaconda3/envs/pytorch/lib/python3.8/site-packages/wandb/sdk/internal/sender.py", line 237, in send
+    send_handler(record)
+  File "/Users/polcom/opt/anaconda3/envs/pytorch/lib/python3.8/site-packages/wandb/sdk/internal/sender.py", line 695, in send_run
+    self._init_run(run, config_value_dict)
+  File "/Users/polcom/opt/anaconda3/envs/pytorch/lib/python3.8/site-packages/wandb/sdk/internal/sender.py", line 719, in _init_run
+    server_run, inserted = self._api.upsert_run(
+  File "/Users/polcom/opt/anaconda3/envs/pytorch/lib/python3.8/site-packages/wandb/apis/normalize.py", line 58, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/Users/polcom/opt/anaconda3/envs/pytorch/lib/python3.8/site-packages/wandb/apis/normalize.py", line 22, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/polcom/opt/anaconda3/envs/pytorch/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 1319, in upsert_run
+    response = self.gql(mutation, variable_values=variable_values, **kwargs)
+  File "/Users/polcom/opt/anaconda3/envs/pytorch/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 118, in __call__
+    if not check_retry_fn(e):
+  File "/Users/polcom/opt/anaconda3/envs/pytorch/lib/python3.8/site-packages/wandb/util.py", line 883, in no_retry_auth
+    raise CommError("Invalid or missing api_key. Run `wandb login`")
+wandb.errors.CommError: Invalid or missing api_key. Run `wandb login`
+2022-06-24 05:25:42,595 WARNING MainThread:48404 [wandb_init.py:init():1020] interrupted
+Traceback (most recent call last):
+  File "/Users/polcom/opt/anaconda3/envs/pytorch/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 999, in init
+    run = wi.init()
+  File "/Users/polcom/opt/anaconda3/envs/pytorch/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 630, in init
+    run_result = backend.interface.communicate_run(
+  File "/Users/polcom/opt/anaconda3/envs/pytorch/lib/python3.8/site-packages/wandb/sdk/interface/interface.py", line 223, in communicate_run
+    return self._communicate_run(run, timeout=timeout)
+  File "/Users/polcom/opt/anaconda3/envs/pytorch/lib/python3.8/site-packages/wandb/sdk/interface/interface_shared.py", line 324, in _communicate_run
+    resp = self._communicate(req, timeout=timeout)
+  File "/Users/polcom/opt/anaconda3/envs/pytorch/lib/python3.8/site-packages/wandb/sdk/interface/interface_shared.py", line 226, in _communicate
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "/Users/polcom/opt/anaconda3/envs/pytorch/lib/python3.8/site-packages/wandb/sdk/interface/router.py", line 37, in get
+    is_set = self._object_ready.wait(timeout)
+  File "/Users/polcom/opt/anaconda3/envs/pytorch/lib/python3.8/threading.py", line 558, in wait
+    signaled = self._cond.wait(timeout)
+  File "/Users/polcom/opt/anaconda3/envs/pytorch/lib/python3.8/threading.py", line 306, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2022-06-24 05:25:42,607 INFO    MainThread:48404 [internal.py:handle_exit():80] Internal process exited

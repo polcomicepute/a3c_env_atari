@@ -1,0 +1,59 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.19
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.8.0
+    start_time: 1656015945
+    t:
+      1:
+      - 1
+      - 55
+      3:
+      - 1
+      - 13
+      - 35
+      4: 3.8.0
+      5: 0.12.19
+      8:
+      - 8
+entropy_coef:
+  desc: null
+  value: 0.01
+env_name:
+  desc: null
+  value: PongNoFrameskip-v4
+gae_lambda:
+  desc: null
+  value: 1.0
+gamma:
+  desc: null
+  value: 0.99
+lr:
+  desc: null
+  value: 0.0001
+max_episode_length:
+  desc: null
+  value: 1000000
+max_grad_norm:
+  desc: null
+  value: 50
+no_shared:
+  desc: null
+  value: true
+num_processes:
+  desc: null
+  value: 12
+num_steps:
+  desc: null
+  value: 20
+seed:
+  desc: null
+  value: 1
+value_loss_coef:
+  desc: null
+  value: 0.5

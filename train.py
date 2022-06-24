@@ -18,6 +18,8 @@ def ensure_shared_grads(model, shared_model):
 
 
 def train(rank, args, shared_model, counter, lock, optimizer=None):
+    # wandb.init()
+    
     torch.manual_seed(args.seed + rank)
     
     
@@ -115,12 +117,14 @@ def train(rank, args, shared_model, counter, lock, optimizer=None):
             value_loss = value_loss + 0.5 * advantage.pow(2)
 
             # Generalized Advantage Estimation
-            delta_t = rewards[i] + args.gamma * \
-                values[i + 1] - values[i]
-            gae = gae * args.gamma * args.gae_lambda + delta_t
+            # delta_t = rewards[i] + args.gamma * \
+            #     values[i + 1] - values[i]
+            # gae = gae * args.gamma * args.gae_lambda + delta_t
 
+            # policy_loss = policy_loss - \
+            #     log_probs[i] * gae.detach() - args.entropy_coef * entropies[i]
             policy_loss = policy_loss - \
-                log_probs[i] * gae.detach() - args.entropy_coef * entropies[i]
+                log_probs[i] * advantage.detach() - args.entropy_coef * entropies[i]
 
         optimizer.zero_grad()
 
