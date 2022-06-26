@@ -77,9 +77,10 @@ Atari Wrapper 이용하여 Environment Customization
 
 - __WarpFrame (Input Representation)__
 
-    Convert to grayscale and warp frames to 84x84 (default) as done in the Nature paper and later work.
-
-
+    Convert to grayscale and warp frames to 84x84 (default) as done in the Nature paper and later work.  
+  
+- __Pixel Normalization__
+    255로 나누어 픽셀 값을 0~1사이로 정규화
 
 
 <img src="./img/representation.png" width="60%" height="60%" >  
@@ -184,6 +185,13 @@ Global weight를 지니는 shared model은
 맞는 코드인가 싶어서 찾아보니, multiprocessing에서 각 프로세스는 shared memory의 data(weight)는 공유하지만 grad는 공유하지 않는다고 한다. grad는 각 프로세스마다 local로 가지며, 각자local model의 loss backward를 통해서 grad를 계산하고 local grad를 통해 global model의 parameter를 올린 optimizer를 이용해서 global weight를 갱신한다.  
 __한마디로 각 프로세스마다 각자의 grad를 가지고 배울 수 있도록 하기 위해서라고 할 수 있다.__  
 
+
+## 보완 실험  
+그나마 쉬운 task임에도 성적이 좋지 않았던 Breakout에 대해 보완 실험을 진행해보았다.    
+Input과 model의 부실함이 원인인 것 같아서 기존 Model에  
+Image 4 stacl + BatchNorm2d 추가 + 2번째 conv layer 64채널로 증가  
+하였으나 결과가 비슷했다.   
+<img src="./img/breakout_보완.png" width="100%" height="100%" >
 
   
 

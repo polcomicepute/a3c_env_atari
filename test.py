@@ -3,6 +3,7 @@ from collections import deque
 import os
 import torch
 import torch.nn.functional as F
+import numpy as np
 
 # from envs import create_atari_env
 from envs_hm import make_atari,wrap_deepmind
@@ -33,6 +34,7 @@ def test(rank, args, shared_model, counter):
     model.eval()
 
     state = env.reset()
+    state = np.array(state,copy=False)
     state = torch.from_numpy(state.transpose(2, 0, 1)/255).float()
 
     reward_sum = 0
@@ -94,7 +96,8 @@ def test(rank, args, shared_model, counter):
                 break
         if counter.value % args.save_freq == 0:
                 save(shared_model,'gym-results-hm/','a3c_'+str(args.env_name)+'.pth.tar')
-
+                
+        state = np.array(state,copy=False)
         state = torch.from_numpy(state.transpose(2, 0, 1)/255).float()
         
         

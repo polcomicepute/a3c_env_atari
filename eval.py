@@ -39,6 +39,7 @@ def eval(args, n_episodes):
     model.eval()
 
     state = env.reset()
+    state = np.array(state,copy=False)
     state = torch.from_numpy(state.transpose(2, 0, 1)/255).float()
 
     reward_sum = 0
@@ -98,7 +99,7 @@ def eval(args, n_episodes):
             if n_epi > n_episodes:
                 break
             
-
+        state = np.array(state,copy=False)
         state = torch.from_numpy(state.transpose(2, 0, 1)/255).float()
         
     print("avg reward: %5f" % (np.mean(all_rewards)))

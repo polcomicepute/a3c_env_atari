@@ -9,11 +9,21 @@ import torch.nn.functional as F
 class ActorCritic(nn.Module):
     def __init__(self, num_inputs, action_space):
         super(ActorCritic, self).__init__()
-        self.conv1 = nn.Conv2d(num_inputs, 32, 3, stride=2, padding=1)
-        self.conv2 = nn.Conv2d(32, 32, 3, stride=2, padding=1)
-        self.conv3 = nn.Conv2d(32, 32, 3, stride=2, padding=1)
-        self.conv4 = nn.Conv2d(32, 32, 3, stride=4, padding=1)
-        self.relu = nn.ReLU()
+        # self.conv1 = nn.Conv2d(num_inputs, 32, 3, stride=2, padding=1)
+        # self.conv2 = nn.Conv2d(32, 32, 3, stride=2, padding=1)
+        # self.conv3 = nn.Conv2d(32, 32, 3, stride=2, padding=1)
+        # self.conv4 = nn.Conv2d(32, 32, 3, stride=4, padding=1)
+        # self.relu = nn.ReLU()
+        self.cnn = nn.Sequential(
+            nn.Conv2d(num_inputs, 32, kernel_size=8, stride=6),
+            nn.BatchNorm2d(32),
+            nn.ReLU(),
+            nn.Conv2d(32, 64, kernel_size=4, stride=2),
+            nn.BatchNorm2d(64),
+            nn.ReLU(),
+            nn.Conv2d(64, 32, kernel_size=3, stride=1),
+            nn.BatchNorm2d(32),
+            nn.ReLU())
 
         self.lstm = nn.LSTMCell(32 * 3 * 3, 256)
 
@@ -29,10 +39,13 @@ class ActorCritic(nn.Module):
         # print('1',hx.shape)
         # print('2',cx.shape)
         
-        x = self.relu(self.conv1(inputs))
-        x = self.relu(self.conv2(x))
-        x = self.relu(self.conv3(x))
-        x = self.relu(self.conv4(x))
+        # x = self.relu(self.conv1(inputs))
+        # x = self.relu(self.conv2(x))
+        # x = self.relu(self.conv3(x))
+        # x = self.relu(self.conv4(x))
+        
+        x = self.cnn(inputs)
+        # x = x.view(x.size(0), -1)
         
         # print('3',x.shape)  
 

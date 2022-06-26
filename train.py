@@ -48,6 +48,7 @@ def train(rank, args, shared_model, counter, lock, optimizer=None):
     model.train()
 
     state = env.reset()
+    state = np.array(state,copy=False)
     state = torch.from_numpy(state.transpose(2, 0, 1)/255).float()
     done = True
 
@@ -98,7 +99,7 @@ def train(rank, args, shared_model, counter, lock, optimizer=None):
             if done:
                 episode_length = 0
                 state = env.reset()
-
+            state = np.array(state,copy=False)
             state = torch.from_numpy(state.transpose(2, 0, 1)/255).float()
 
             values.append(value)
