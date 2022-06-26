@@ -1,7 +1,11 @@
 # Training Atari Game Agents Using A3C  
 ## Run
+<pre>
+<code>
 python3 main.py --env-name "BoxingNoFrameskip-v4" --num-processes 12 --exp eval
 python3 main.py --env-name "BoxingNoFrameskip-v4" --num-processes 12 --exp train
+</code>
+</pre>
 
 ## 실험 환경
 - Apple M1 Pro 칩
@@ -12,20 +16,25 @@ python3 main.py --env-name "BoxingNoFrameskip-v4" --num-processes 12 --exp train
 ## 실험 조건
 - 5000,000 step만 실행 
 - 실행한 Atari Game 종류
-    1. Pong
+    1. Pong   
+
         ![Alt text](./img/pong.gif)
 
-    2. Breakout
+    2. Breakout   
+
         ![Alt text](./img/breakout.gif)
         
-    3. SpaceInvaders
+    3. SpaceInvaders   
+
         ![Alt text](./img/space_invaders.gif)
         
-    4. Boxing
+    4. Boxing   
+
         ![Alt text](./img/boxing.gif)
         
-    5. IceHockey
-        ![Alt text](./img/ice_hockey.gif)
+    5. IceHockey   
+
+        ![Alt text](./img/ice_hockey.gif)  
 - WandB 이용
 
 ## Hyperparameters 
@@ -71,18 +80,18 @@ Atari Wrapper 이용하여 Environment Customization
     Convert to grayscale and warp frames to 84x84 (default) as done in the Nature paper and later work.
 
 
-https://stable-baselines3.readthedocs.io/en/master/common/atari_wrappers.html  
 
-https://towardsdatascience.com/deep-q-network-dqn-i-bce08bdf2af
 
-<img src="./img/representation.png" width="60%" height="60%" >
+<img src="./img/representation.png" width="60%" height="60%" >  
+
 
 
   
     
 ## Model Archiecture
 
-<img src="./img/model.png" width="110%" height="110%" >
+<img src="./img/model.png" width="110%" height="110%" >  
+
 
   
 ## Loss
@@ -113,7 +122,7 @@ https://towardsdatascience.com/deep-q-network-dqn-i-bce08bdf2af
   
 ## Experiment Score Graph
 ### Pong
-- Train
+- Train   
 <img src="./img/pong_train.png" width="120%" height="120%" >
 
 
@@ -154,7 +163,10 @@ https://towardsdatascience.com/deep-q-network-dqn-i-bce08bdf2af
 
 
 - Test
-<img src="./img/boxing_eval.png" width="100%" height="100%" >  
+<img src="./img/boxing_eval.png" width="100%" height="100%" >    
+
+Pong외에 안정적인 결과가 나온 실험이 거의 없다.   
+
 
 
 ## Shared Model 작동 원리
@@ -170,13 +182,17 @@ Global weight를 지니는 shared model은
 <img src="./img/grad.png" width="60%" height="60%" >    
 
 맞는 코드인가 싶어서 찾아보니, multiprocessing에서 각 프로세스는 shared memory의 data(weight)는 공유하지만 grad는 공유하지 않는다고 한다. grad는 각 프로세스마다 local로 가지며, 각자local model의 loss backward를 통해서 grad를 계산하고 local grad를 통해 global model의 parameter를 올린 optimizer를 이용해서 global weight를 갱신한다.  
-__한마디로 각 프로세스마다 각자의 grad를 가지고 배울 수 있도록 하기 위해서라고 할 수 있다.__
+__한마디로 각 프로세스마다 각자의 grad를 가지고 배울 수 있도록 하기 위해서라고 할 수 있다.__  
+
 
   
 
 
-- 참고한 git 
-https://github.com/ikostrikov/pytorch-a3c
+- Reference  
+
+https://github.com/ikostrikov/pytorch-a3c  
+https://stable-baselines3.readthedocs.io/en/master/common/atari_wrappers.html  
+https://towardsdatascience.com/deep-q-network-dqn-i-bce08bdf2af
 
 
   
