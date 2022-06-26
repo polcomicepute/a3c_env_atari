@@ -65,3 +65,358 @@ config: {}
 2022-06-24 13:07:37,209 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
 2022-06-24 13:08:04,320 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
 2022-06-24 13:08:04,818 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:08:33,018 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:08:33,431 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:09:01,151 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:09:01,153 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:09:02,157 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:09:29,005 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:09:29,707 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:09:57,304 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:09:57,360 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:10:25,678 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:10:25,931 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:10:54,152 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:10:54,480 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:11:22,337 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:11:23,043 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:11:50,703 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:11:51,707 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:12:19,273 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:12:19,375 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:12:47,691 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:12:48,012 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:13:15,521 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:13:15,559 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:13:43,027 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:13:43,102 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:14:10,829 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:14:11,603 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:14:38,646 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:14:39,127 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:15:06,602 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:15:06,692 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:15:34,691 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:15:35,342 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:16:02,271 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:16:02,928 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:16:30,227 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:16:30,518 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:16:58,306 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:16:58,327 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:17:26,202 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:17:26,998 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:17:54,118 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:17:54,585 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:18:22,213 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:18:22,252 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:18:49,910 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:18:49,911 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:19:17,763 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:19:18,479 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:19:45,638 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:19:46,071 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:20:13,456 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:20:13,752 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:20:41,551 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:20:41,551 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:20:42,570 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:21:09,728 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:21:10,269 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:21:37,728 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:21:38,014 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:22:05,688 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:22:05,688 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:22:06,719 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:22:33,839 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:22:34,405 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:23:01,659 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:23:01,956 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:23:29,549 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:23:29,587 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:23:57,354 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:23:57,373 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:23:58,366 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:24:25,329 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:24:26,056 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:24:53,270 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:24:53,706 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:25:23,966 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:25:24,283 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:26:34,979 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:26:35,001 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:27:03,099 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:27:03,614 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:27:31,331 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:27:31,369 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:28:51,090 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:28:51,164 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:30:02,377 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:30:02,997 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:30:55,285 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:30:55,945 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:31:30,133 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:31:30,595 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:32:42,070 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:32:42,861 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:33:16,952 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:33:17,487 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:34:19,898 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:34:20,664 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:35:35,013 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:35:35,067 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:36:30,048 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:36:30,927 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:37:18,297 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:37:18,789 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:37:50,878 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:37:50,897 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:38:29,225 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:38:29,316 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:39:04,091 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:39:04,748 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:39:51,254 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:39:51,649 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:41:27,141 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:41:27,666 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:42:16,065 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:42:16,951 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:43:05,862 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:43:06,048 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:44:56,858 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:44:56,917 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:46:23,732 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:46:24,391 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:48:05,737 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:48:05,814 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:49:45,702 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:49:46,454 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:51:25,828 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:51:26,440 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:53:13,436 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:53:13,558 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:54:57,111 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:54:57,735 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:56:44,903 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:56:45,042 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:57:49,340 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:57:49,839 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:58:53,852 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:58:53,852 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:58:54,881 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 13:59:59,382 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 13:59:59,761 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:01:06,928 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:01:07,538 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:02:09,579 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:02:10,318 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:03:15,070 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:03:15,323 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:04:17,501 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:04:18,283 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:05:22,084 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:05:22,219 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:06:27,358 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:06:28,226 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:07:32,199 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:07:32,241 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:08:36,356 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:08:37,180 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:09:41,761 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:09:42,265 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:10:47,136 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:10:47,340 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:11:52,300 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:11:52,302 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:12:58,036 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:12:58,466 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:14:03,787 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:14:04,247 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:15:09,701 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:15:10,167 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:16:16,864 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:16:16,974 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:17:22,774 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:17:22,892 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:18:27,232 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:18:27,773 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:19:33,348 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:19:33,464 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:20:38,717 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:20:39,408 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:21:42,854 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:21:43,477 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:22:46,753 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:22:47,649 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:23:51,551 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:23:52,268 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:24:56,628 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:24:57,197 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:26:00,949 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:26:01,068 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:27:04,728 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:27:05,130 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:28:08,768 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:28:09,156 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:29:12,876 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:29:12,896 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:30:17,873 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:30:17,936 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:31:21,807 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:31:21,832 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:32:25,724 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:32:25,783 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:33:29,763 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:33:29,764 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:34:35,156 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:34:35,913 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:35:41,238 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:35:41,942 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:36:45,228 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:36:45,972 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:37:49,112 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:37:50,014 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:38:53,475 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:38:53,924 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:39:59,270 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:39:59,566 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:41:03,786 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:41:04,463 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:42:08,127 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:42:08,423 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:43:12,096 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:43:12,540 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:44:15,948 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:44:16,536 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:45:19,882 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:45:20,458 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:46:23,666 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:46:24,498 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:47:27,671 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:47:28,541 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:48:32,164 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:48:32,547 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:49:36,056 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:49:36,451 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:50:39,868 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:50:40,374 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:51:44,013 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:51:44,392 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:52:48,369 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:52:48,428 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:53:52,263 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:53:52,401 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:54:56,450 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:54:56,527 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:56:00,219 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:56:00,407 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:57:06,816 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:57:07,299 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:58:16,286 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:58:16,382 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 14:59:22,111 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 14:59:22,131 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:00:25,869 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:00:26,036 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:01:29,983 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:01:30,100 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:02:33,831 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:02:34,065 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:03:38,158 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:03:38,195 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:04:43,473 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:04:43,976 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:05:47,327 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:05:47,959 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:06:51,314 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:06:51,931 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:07:55,355 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:07:55,901 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:08:59,373 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:08:59,937 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:10:04,398 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:10:04,744 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:11:08,308 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:11:08,842 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:12:14,660 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:12:14,882 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:13:18,356 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:13:18,936 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:14:22,386 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:14:22,941 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:15:26,374 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:15:26,918 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:16:30,181 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:16:30,886 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:17:34,520 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:17:34,792 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:18:38,556 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:18:38,760 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:19:43,059 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:19:43,599 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:20:47,648 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:20:48,291 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:21:53,292 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:21:53,331 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:22:57,651 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:22:57,809 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:24:00,888 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:24:01,263 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:25:01,669 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:25:01,689 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:26:02,380 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:26:02,961 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:27:03,247 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:27:03,290 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:28:05,195 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:28:05,844 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:29:06,225 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:29:06,974 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:30:07,194 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:30:07,213 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:31:08,518 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:31:08,554 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:32:12,664 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:32:13,432 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:33:17,861 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:33:18,101 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:34:21,840 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:34:21,899 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:35:26,293 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:35:26,683 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:36:30,230 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:36:30,249 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:37:31,904 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:37:32,678 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:38:33,390 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:38:34,151 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:39:39,566 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:39:40,120 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:40:42,134 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:40:42,569 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:41:42,571 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:41:42,687 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:42:45,363 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:42:45,841 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:43:51,665 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:43:51,739 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:44:55,319 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:44:56,049 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:46:02,001 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:46:02,572 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:47:06,858 INFO    SenderThread:51173 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-24 15:47:07,594 INFO    Thread-10 :51173 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json
+2022-06-24 15:47:45,325 WARNING MsgRouterThr:51173 [router.py:message_loop():73] EOFError seen in message_loop
+2022-06-24 15:47:45,336 INFO    MainThread:51173 [wandb_run.py:_atexit_cleanup():1867] got exitcode: 1
+2022-06-24 15:47:45,341 INFO    MainThread:51173 [wandb_run.py:_restore():1839] restore
+2022-06-24 15:47:45,657 INFO    SenderThread:51173 [sender.py:finish():1111] shutting down sender
+2022-06-24 15:47:45,657 INFO    SenderThread:51173 [dir_watcher.py:finish():336] shutting down directory watcher
+2022-06-24 15:47:46,238 INFO    SenderThread:51173 [dir_watcher.py:finish():366] scan: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files
+2022-06-24 15:47:46,240 INFO    SenderThread:51173 [dir_watcher.py:finish():380] scan save: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/requirements.txt requirements.txt
+2022-06-24 15:47:46,240 INFO    SenderThread:51173 [dir_watcher.py:finish():380] scan save: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/output.log output.log
+2022-06-24 15:47:46,241 INFO    SenderThread:51173 [dir_watcher.py:finish():380] scan save: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/config.yaml config.yaml
+2022-06-24 15:47:46,246 INFO    SenderThread:51173 [dir_watcher.py:finish():380] scan save: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-summary.json wandb-summary.json
+2022-06-24 15:47:46,246 INFO    SenderThread:51173 [dir_watcher.py:finish():380] scan save: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/conda-environment.yaml conda-environment.yaml
+2022-06-24 15:47:46,254 INFO    SenderThread:51173 [dir_watcher.py:finish():380] scan save: /Users/polcom/Code/RL/a3c_pong/wandb/run-20220624_130059-6v3h5ki2/files/wandb-metadata.json wandb-metadata.json
+2022-06-24 15:47:46,254 INFO    SenderThread:51173 [file_pusher.py:finish():145] shutting down file pusher
+2022-06-24 15:47:46,257 INFO    SenderThread:51173 [file_pusher.py:join():150] waiting for file pusher

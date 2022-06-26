@@ -4,28 +4,6 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 
-def normalized_columns_initializer(weights, std=1.0):
-    out = torch.randn(weights.size())
-    out *= std / torch.sqrt(out.pow(2).sum(1, keepdim=True))
-    return out
-
-
-def weights_init(m):
-    classname = m.__class__.__name__
-    if classname.find('Conv') != -1:
-        weight_shape = list(m.weight.data.size())
-        fan_in = np.prod(weight_shape[1:4])
-        fan_out = np.prod(weight_shape[2:4]) * weight_shape[0]
-        w_bound = np.sqrt(6. / (fan_in + fan_out))
-        m.weight.data.uniform_(-w_bound, w_bound)
-        m.bias.data.fill_(0)
-    elif classname.find('Linear') != -1:
-        weight_shape = list(m.weight.data.size())
-        fan_in = weight_shape[1]
-        fan_out = weight_shape[0]
-        w_bound = np.sqrt(6. / (fan_in + fan_out))
-        m.weight.data.uniform_(-w_bound, w_bound)
-        m.bias.data.fill_(0)
 
 
 class ActorCritic(nn.Module):
@@ -43,33 +21,27 @@ class ActorCritic(nn.Module):
         self.critic_linear = nn.Linear(256, 1)
         self.actor_linear = nn.Linear(256, num_outputs)
 
-        # self.apply(weights_init)
-        # self.actor_linear.weight.data = normalized_columns_initializer(
-        #     self.actor_linear.weight.data, 0.01)
-        # self.actor_linear.bias.data.fill_(0)
-        # self.critic_linear.weight.data = normalized_columns_initializer(
-        #     self.critic_linear.weight.data, 1.0)
-        # self.critic_linear.bias.data.fill_(0)
-
-        # self.lstm.bias_ih.data.fill_(0)
-        # self.lstm.bias_hh.data.fill_(0)
-
         self.train()
 
     def forward(self, inputs):
         inputs, (hx, cx) = inputs
-        # print(inputs.shape)
+        # print('0',inputs.shape)
+        # print('1',hx.shape)
+        # print('2',cx.shape)
         
         x = self.relu(self.conv1(inputs))
         x = self.relu(self.conv2(x))
         x = self.relu(self.conv3(x))
         x = self.relu(self.conv4(x))
-        # print('x',x.shape)  
+        
+        # print('3',x.shape)  
 
         x = x.view(-1, 32 * 3 * 3)
-        # print('x',x.shape)
+        # print('4',x.shape)
         
         hx, cx = self.lstm(x, (hx, cx))
         x = hx
+        
+        # print('5',self.critic_linear(x).shape, self.actor_linear(x).shape, hx.shape, cx.shape)
 
         return self.critic_linear(x), self.actor_linear(x), (hx, cx)

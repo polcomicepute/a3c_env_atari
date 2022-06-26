@@ -1,44 +1,182 @@
-# pytorch-a3c
+# Training Atari Game Agents Using A3C  
+## Run
+python3 main.py --env-name "BoxingNoFrameskip-v4" --num-processes 12 --exp eval
+python3 main.py --env-name "BoxingNoFrameskip-v4" --num-processes 12 --exp train
 
-This is a PyTorch implementation of Asynchronous Advantage Actor Critic (A3C) from ["Asynchronous Methods for Deep Reinforcement Learning"](https://arxiv.org/pdf/1602.01783v1.pdf).
+## 실험 환경
+- Apple M1 Pro 칩
 
-This implementation is inspired by [Universe Starter Agent](https://github.com/openai/universe-starter-agent).
-In contrast to the starter agent, it uses an optimizer with shared statistics as in the original paper.
+  8코어 CPU(성능 코어 6개 및 효율 코어 2개)
+- 12 multi-processes
 
-Please use this bibtex if you want to cite this repository in your publications:
+## 실험 조건
+- 5000,000 step만 실행 
+- 실행한 Atari Game 종류
+    1. Pong
+        ![Alt text](./img/pong.gif)
 
-    @misc{pytorchaaac,
-      author = {Kostrikov, Ilya},
-      title = {PyTorch Implementations of Asynchronous Advantage Actor Critic},
-      year = {2018},
-      publisher = {GitHub},
-      journal = {GitHub repository},
-      howpublished = {\url{https://github.com/ikostrikov/pytorch-a3c}},
-    }
+    2. Breakout
+        ![Alt text](./img/breakout.gif)
+        
+    3. SpaceInvaders
+        ![Alt text](./img/space_invaders.gif)
+        
+    4. Boxing
+        ![Alt text](./img/boxing.gif)
+        
+    5. IceHockey
+        ![Alt text](./img/ice_hockey.gif)
+- WandB 이용
 
-## A2C
+## Hyperparameters 
+- Learning rate = 0.0001
+- No Learning Scheduler (성적이 좋지 않음)
+- Adam Optimizer 
+- Seed = 1 + rank
+- Image Size (H, W, C): [210, 160, 3] => [84, 84, 1] 
+- N-step = 20
+- Gamma = 0.99
+- Entropy Coefficient = 0.01
+- Value Loss Coefficient = 0.5
 
-I **highly recommend** to check a sychronous version and other algorithms: [pytorch-a2c-ppo-acktr](https://github.com/ikostrikov/pytorch-a2c-ppo-acktr).
 
-In my experience, A2C works better than A3C and ACKTR is better than both of them. Moreover, PPO is a great algorithm for continuous control. Thus, I recommend to try A2C/PPO/ACKTR first and use A3C only if you need it specifically for some reasons.
 
-Also read [OpenAI blog](https://blog.openai.com/baselines-acktr-a2c/) for more information.
+## Input Representation & Env Customization
+Atari Wrapper 이용하여 Environment Customization
+- __NoopResetEnv(noop_max=30)__
 
-## Contributions
+    Reset후 no-ops에 해당하는 숫자를 랜덤하게 취해서 initial state sampling  
+    
+        
+- __MaxAndSkipEnv(skip=4)__  
 
-Contributions are very welcome. If you know how to make this code better, don't hesitate to send a pull request.
+    Return only every skip-th frame (frameskipping)
+    Step the environment with the given action Repeat action, sum reward, and max over last observations.
+    frame skipping    
+    
 
-## Usage
-```bash
-# Works only wih Python 3.
-python3 main.py --env-name "PongDeterministic-v4" --num-processes 16
-```
+- __EpisodicLifeEnv__  
 
-This code runs evaluation in a separate thread in addition to 16 processes.
+    Make end-of-life == end-of-episode, but only reset on true game over. Done by DeepMind for the DQN and co. since it helps value estimation.(Agent가 죽는 시점을 episode끝으로 보고, done을 반환 후 reset한다.)  
+    
 
-## Results
+- __ClipRewardEnv__  
 
-With 16 processes it converges for PongDeterministic-v4 in 15 minutes.
-![PongDeterministic-v4](images/PongReward.png)
+    Clips the reward to {+1, 0, -1} by its sign.  
+    
 
-For BreakoutDeterministic-v4 it takes more than several hours.
+
+- __WarpFrame (Input Representation)__
+
+    Convert to grayscale and warp frames to 84x84 (default) as done in the Nature paper and later work.
+
+
+https://stable-baselines3.readthedocs.io/en/master/common/atari_wrappers.html  
+
+https://towardsdatascience.com/deep-q-network-dqn-i-bce08bdf2af
+
+<img src="./img/representation.png" width="60%" height="60%" >
+
+
+  
+    
+## Model Archiecture
+
+<img src="./img/model.png" width="110%" height="110%" >
+
+  
+## Loss
+- __Advantage__ 
+- __N-step Return__
+- __Entropy Regularization Term 이용__
+
+### 최종 Loss  
+### $L = L_{\pi}+c_vL_v+c_eL_{entropy}$    
+- $L$ = 최종 Loss
+- $L_{\pi}$ = Actor Loss
+- $L_{v}$ = Critic Loss
+- $L_{entropy}$ = Entropy Regularization Term
+- $c_v$ = value\ coefficient
+- $c_e$ = entropy\ coefficient  
+
+### Critic Loss
+### $L_v = (r_{t+1}+ \gamma r_{t+2}+ \gamma^2 r_{t+2}... + \gamma^{19} V_v(s_{t+20})-V_v(s_t))^2 +(r_{t+2}+ \gamma r_{t+3}+ \gamma^2 r_{t+4}... + \gamma^{18} V_v(s_{t+20})-V_v(s_{t+1}))^2 + ... + (r_{t+19}+ \gamma V_v(s_{t+20})-V_v(s_{t+19}))^2$
+
+### Actor Loss
+<img src="./img/n-step.png" width="70%" height="70%" >
+
+
+
+
+
+
+  
+## Experiment Score Graph
+### Pong
+- Train
+<img src="./img/pong_train.png" width="120%" height="120%" >
+
+
+
+- Test
+<img src="./img/pong_eval.png" width="100%" height="100%" >
+
+### SpaceInvaders
+- Train
+<img src="./img/spaceinvaders_train.png" width="120%" height="120%" >
+
+
+
+- Test
+<img src="./img/spaceinvaders_eval.png" width="100%" height="100%" >
+
+### Breakout
+- Train
+<img src="./img/breakout_train.png" width="120%" height="120%" >
+
+
+
+- Test
+<img src="./img/breakout_eval.png" width="100%" height="100%" >
+
+### IceHockey
+- Train
+<img src="./img/icehockey_train.png" width="120%" height="120%" >
+
+
+- Test
+<img src="./img/icehockey_eval.png" width="100%" height="100%" >
+
+
+### Boxing
+- Train
+<img src="./img/boxing_train.png" width="120%" height="120%" >
+
+
+- Test
+<img src="./img/boxing_eval.png" width="100%" height="100%" >  
+
+
+## Shared Model 작동 원리
+- Multiprocessing of Pytorch
+다른 process들에게 shared views on the same data를 제공하는 shared_memory를 이용한다. 
+tensor/storage가 shared_memory로 이동하면 copy필요없이 텐서나 스토리지를 자유롭게 다른 process로 전송할 수 있다.
+<img src="./img/shared_memory.png" width="70%" height="70%" >    
+Global weight를 지니는 shared model은 
+<img src="./img/codeofsharedmemory.png" width="60%" height="60%" >     
+
+이와같이 선언하는데, shared memory를 통해서 global memory를 이용하겠다는 의미다.  
+하지만 참고한 코드중에, shared_grad에 local_grad를 처음 프로세스가 생성되고 한번만 할당하는 것을 발견했다.   
+<img src="./img/grad.png" width="60%" height="60%" >    
+
+맞는 코드인가 싶어서 찾아보니, multiprocessing에서 각 프로세스는 shared memory의 data(weight)는 공유하지만 grad는 공유하지 않는다고 한다. grad는 각 프로세스마다 local로 가지며, 각자local model의 loss backward를 통해서 grad를 계산하고 local grad를 통해 global model의 parameter를 올린 optimizer를 이용해서 global weight를 갱신한다.  
+__한마디로 각 프로세스마다 각자의 grad를 가지고 배울 수 있도록 하기 위해서라고 할 수 있다.__
+
+  
+
+
+- 참고한 git 
+https://github.com/ikostrikov/pytorch-a3c
+
+
+  

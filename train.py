@@ -7,6 +7,7 @@ import numpy as np
 from envs_hm import make_atari,wrap_deepmind
 
 from model import ActorCritic
+from torch.utils.tensorboard import SummaryWriter 
 
 
 def ensure_shared_grads(model, shared_model):
@@ -15,13 +16,16 @@ def ensure_shared_grads(model, shared_model):
         if shared_param.grad is not None:
             return
         shared_param._grad = param.grad
+        # print('None')
+        
 
 
 def train(rank, args, shared_model, counter, lock, optimizer=None):
-    # wandb.init()
+    if rank==0:
+        writer = SummaryWriter('./log_dir')
+
     
     torch.manual_seed(args.seed + rank)
-    
     
 
     env = make_atari(args.env_name, render_mode=None)
@@ -34,8 +38,12 @@ def train(rank, args, shared_model, counter, lock, optimizer=None):
 
     model = ActorCritic(state_size[0], env.action_space)
 
-    if optimizer is None:
-        optimizer = optim.Adam(shared_model.parameters(), lr=args.lr)
+    # if optimizer is None:
+    optimizer = optim.Adam(shared_model.parameters(), lr=args.lr)
+    
+    # scheduler = optim.lr_scheduler.LambdaLR(optimizer, lr_lambda = lambda step: 0.95 ** step, last_epoch=-1,
+    #                             verbose=True)#
+
 
     model.train()
 
@@ -45,8 +53,6 @@ def train(rank, args, shared_model, counter, lock, optimizer=None):
 
     episode_length = 0
     while True:
-        # Sync with the shared model
-        # print('train')
         
         model.load_state_dict(shared_model.state_dict())
         
@@ -110,26 +116,30 @@ def train(rank, args, shared_model, counter, lock, optimizer=None):
         values.append(R)
         policy_loss = 0
         value_loss = 0
-        gae = torch.zeros(1, 1)
         for i in reversed(range(len(rewards))):
             R = args.gamma * R + rewards[i]
             advantage = R - values[i]
             value_loss = value_loss + 0.5 * advantage.pow(2)
 
-            # Generalized Advantage Estimation
-            # delta_t = rewards[i] + args.gamma * \
-            #     values[i + 1] - values[i]
-            # gae = gae * args.gamma * args.gae_lambda + delta_t
-
-            # policy_loss = policy_loss - \
-            #     log_probs[i] * gae.detach() - args.entropy_coef * entropies[i]
             policy_loss = policy_loss - \
                 log_probs[i] * advantage.detach() - args.entropy_coef * entropies[i]
 
         optimizer.zero_grad()
 
         (policy_loss + args.value_loss_coef * value_loss).backward()
-        # torch.nn.utils.clip_grad_norm_(model.parameters(), args.max_grad_norm)
 
         ensure_shared_grads(model, shared_model)
         optimizer.step()
+            
+        
+        if rank==0:
+            writer.add_scalar('LR/train', get_lr(optimizer), counter.value)
+        
+        if counter.value > 5000000: #! Done 안에 넣어야하나 ? 
+            break
+        
+        
+            
+def get_lr(optimizer):
+    for param_group in optimizer.param_groups:
+        return param_group['lr']

@@ -13,7 +13,7 @@ wandb.login()
 os.environ["WANDB_API_KEY"] = "41d70fa07c07644beca7655a81d7af49afccf2dd"
 
 def test(rank, args, shared_model, counter):
-    wandb.init(project='Pong_NoGAE_4frame+LSTM', entity = "polcom",name='test1_Pong_NoGAE_4frame+LSTM', config=None, sync_tensorboard=True, settings=wandb.Settings(start_method='thread', console="off"))
+    wandb.init(project=str(args.env_name) + '_NoGAE_1frame+LSTM', entity = "polcom",name='test1_'+ str(args.env_name) +'_NoGAE_1frame+LSTM', config=None, sync_tensorboard=True, settings=wandb.Settings(start_method='thread', console="off"))
     wandb.config.update(args)
     
     torch.manual_seed(args.seed + rank)
@@ -24,14 +24,12 @@ def test(rank, args, shared_model, counter):
     
     img_h, img_w, img_c = env.observation_space.shape
     state_size = [1*img_c, img_h, img_w]
-    print('train', state_size)
+    print('test', state_size)
 
     model = ActorCritic(state_size[0], env.action_space)
-    wandb.watch(model)
+    wandb.watch(shared_model)
     
-
-    # model = ActorCritic(env.observation_space.shape[0], env.action_space)
-
+    
     model.eval()
 
     state = env.reset()
@@ -46,7 +44,9 @@ def test(rank, args, shared_model, counter):
     actions = deque(maxlen=100)
     episode_length = 0
     
+    best_reward = -10000
     while True:
+        # print('test' + str(counter.value))
         episode_length += 1
         # Sync with the shared model
         if done:
@@ -60,18 +60,7 @@ def test(rank, args, shared_model, counter):
         with torch.no_grad():
             value, logit, (hx, cx) = model((state.unsqueeze(0), (hx, cx)))
         prob = F.softmax(logit, dim=-1)
-        action = prob.max(1, keepdim=True)[1].numpy()
-        
-        
-        # action = prob.multinomial(num_samples=1).detach() #!왜 랜덤하게 샘플링하지? max값이 아니고
-        #     #! num sample개의 인덱스 나옴 
-        # log_prob = log_prob.gather(1, action) #! 해당 action의 인덱스를 logprobd에서 가져와 
-
-        #     #! perform action, get next state and reward
-        #     # print('action',action[0].numpy())
-            
-        # state, reward, done, _ = env.step(int(action[0]))
-        
+        action = prob.max(1, keepdim=True)[1].numpy()   
 
         state, reward, done, _ = env.step(action[0, 0])
         # env.render()
@@ -81,8 +70,6 @@ def test(rank, args, shared_model, counter):
 
         # a quick hack to prevent the agent from stucking
         actions.append(action[0, 0])
-        # if actions.count(actions[0]) == actions.maxlen:
-        #     done = True
 
         if done:
             print("Time {}, num steps {}, FPS {:.0f}, episode reward {}, episode length {}".format(
@@ -94,16 +81,31 @@ def test(rank, args, shared_model, counter):
                 "Episode Reward": reward_sum ,
                 "num steps": counter.value,
                 "episode length": episode_length})
-            # data = [[x, y] for (x, y) in zip(recall_micro, precision_micro)]
-            # table = wandb.Table(data=data, columns = ["recall_micro", "precision_micro"])
-            # wandb.log({"my_lineplot_id" : wandb.plot.line(table, "recall_micro", "precision_micro", stroke=None, title="Episode Reward")})
-            
+             
+            if best_reward < reward_sum:
+                best_reward = reward_sum
+                save(shared_model,'gym-results-hm/','best_a3c_'+str(args.env_name)+'.pth.tar')
             
             reward_sum = 0
             episode_length = 0
             actions.clear()
             state = env.reset()
-            # time.sleep(60)
+            if counter.value > 5000000: 
+                break
+        if counter.value % args.save_freq == 0:
+                save(shared_model,'gym-results-hm/','a3c_'+str(args.env_name)+'.pth.tar')
 
         state = torch.from_numpy(state.transpose(2, 0, 1)/255).float()
         
+        
+        
+def save(model, save_dir, name):
+        modelpath =os.path.join(save_dir, name)
+        torch.save(model.state_dict(), modelpath)
+        print("Saved to model to {}".format(modelpath))
+
+def load(model, save_dir, name):
+    modelpath =os.path.join(save_dir, name)
+    state_dict = torch.load(modelpath, map_location=torch.device('cpu'))
+    model.load_state_dict(state_dict)
+
