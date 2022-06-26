@@ -13,7 +13,7 @@ wandb.login()
 os.environ["WANDB_API_KEY"] = "41d70fa07c07644beca7655a81d7af49afccf2dd"
 
 def test(rank, args, shared_model, counter):
-    wandb.init(project=str(args.env_name) + '_NoGAE_1frame+LSTM', entity = "polcom",name='test1_'+ str(args.env_name) +'_NoGAE_1frame+LSTM', config=None, sync_tensorboard=True, settings=wandb.Settings(start_method='thread', console="off"))
+    wandb.init(project=str(args.env_name) + '_NoGAE_1frame+LSTM', entity = "polcom",name='test2_'+ str(args.env_name) +'_NoGAE_4frame+LSTM', config=None, sync_tensorboard=True, settings=wandb.Settings(start_method='thread', console="off"))
     wandb.config.update(args)
     
     torch.manual_seed(args.seed + rank)

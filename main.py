@@ -6,7 +6,6 @@ import os
 import torch
 import torch.multiprocessing as mp
 
-import my_optim
 # from envs import create_atari_env
 from envs_hm import make_atari, wrap_deepmind
 

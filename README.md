@@ -2,8 +2,8 @@
 ## Run
 <pre>
 <code>
-python3 main.py --env-name "BoxingNoFrameskip-v4" --num-processes 12 --exp eval
-python3 main.py --env-name "BoxingNoFrameskip-v4" --num-processes 12 --exp train
+python main.py --env-name "BreakoutNoFrameskip-v4" --num-processes 1 --exp eval
+python main.py --env-name "BreakoutNoFrameskip-v4" --num-processes 12 --exp train
 </code>
 </pre>
 
