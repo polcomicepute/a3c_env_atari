@@ -96,8 +96,8 @@ https://towardsdatascience.com/deep-q-network-dqn-i-bce08bdf2af
 - $L_{\pi}$ = Actor Loss
 - $L_{v}$ = Critic Loss
 - $L_{entropy}$ = Entropy Regularization Term
-- $c_v$ = value\ coefficient
-- $c_e$ = entropy\ coefficient  
+- $c_v$ = value coefficient
+- $c_e$ = entropy coefficient  
 
 ### Critic Loss
 ### $L_v = (r_{t+1}+ \gamma r_{t+2}+ \gamma^2 r_{t+2}... + \gamma^{19} V_v(s_{t+20})-V_v(s_t))^2 +(r_{t+2}+ \gamma r_{t+3}+ \gamma^2 r_{t+4}... + \gamma^{18} V_v(s_{t+20})-V_v(s_{t+1}))^2 + ... + (r_{t+19}+ \gamma V_v(s_{t+20})-V_v(s_{t+19}))^2$
