@@ -189,7 +189,7 @@ __한마디로 각 프로세스마다 각자의 grad를 가지고 배울 수 있
 ## 보완 실험  
 그나마 쉬운 task임에도 성적이 좋지 않았던 Breakout에 대해 보완 실험을 진행해보았다.    
 Input과 model의 부실함이 원인인 것 같아서 기존 Model에  
-Image 4 stacl + BatchNorm2d 추가 + 2번째 conv layer 64채널로 증가  
+Image 4 stack + BatchNorm2d 추가 + 2번째 conv layer 64채널로 증가  
 하였으나 결과가 비슷했다.   
 <img src="./img/breakout_보완.png" width="100%" height="100%" >
 
